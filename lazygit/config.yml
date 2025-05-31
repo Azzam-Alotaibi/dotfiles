@@ -1,5 +1,25 @@
-gui: 
+gui:
+  authorColors: {
+    "*": "#7aa2f7",
+    }
   theme:
     activeBorderColor:
-    - magent
-    - bold
+      - "#bb9af7" # Light purple - for active panel borders
+      - "bold"
+    inactiveBorderColor:
+      - "#565f89" # Muted blue/grey - for inactive panel borders
+    searchingActiveBorderColor:
+      - "#f7768e" # Soft red - for search mode border
+      - "bold"
+    optionsTextColor:
+      - "#7aa2f7" # Light blue - for keybinding hints
+    selectedLineBgColor:
+      - "#3b4261" # Slightly lighter/contrasting dark blue for selection
+    defaultFgColor:
+      - "#c0caf5" # Off-white/light lavender - general text
+    unstagedChangesColor:
+      - "#f7768e" # Soft red
+    cherryPickedCommitBgColor:
+      - "#414868" # Darker blue for cherry-picked commit background
+    cherryPickedCommitFgColor:
+      - "#bb9af7" # Light purple for cherry-picked commit text
