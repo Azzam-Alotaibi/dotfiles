@@ -25,6 +25,6 @@ esac
 . "$HOME/.local/bin/env"
 
 autoload -U add-zsh-hook
-tmux-git-autofetch() {(/Users/$HOME/.config/tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
+tmux-git-autofetch() {($HOME/.config/tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
 add-zsh-hook chpwd tmux-git-autofetch
     
