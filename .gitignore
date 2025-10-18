@@ -6,3 +6,6 @@ gh
 
 tmux/plugins
 github-copilot
+configstore/update-notifier-@google/gemini-cli.json
+cabal/config
+envman

@@ -28,3 +28,12 @@ autoload -U add-zsh-hook
 tmux-git-autofetch() {($HOME/.config/tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
 add-zsh-hook chpwd tmux-git-autofetch
     
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Haskell
+export PATH=~/haskell-course/.ghcup/bin:$PATH
+
+# Expo
+export EXPO_PACKAGE_MANAGER=pnpm
