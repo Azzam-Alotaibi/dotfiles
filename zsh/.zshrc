@@ -37,3 +37,16 @@ export PATH=~/haskell-course/.ghcup/bin:$PATH
 
 # Expo
 export EXPO_PACKAGE_MANAGER=pnpm
+
+# Android studio 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Use viu to display image
+function view-image() {
+  viu "$1"
+}
+
+# Added by Antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
