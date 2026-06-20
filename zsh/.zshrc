@@ -6,6 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 alias pp='pnpm'
 alias c='code'
 alias gg='go get .'
+alias cptree="tree -I 'node_modules|.git|dist' | pbcopy"
 alias lg='lazygit'
 alias tn='tmux new-session -s'
 alias tl='tmux list-sessions'
@@ -13,6 +14,7 @@ alias ta='tmux attach-session'
 export PATH="/usr/local/mysql/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export COLORTERM=truecolor
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -27,18 +29,18 @@ esac
 autoload -U add-zsh-hook
 tmux-git-autofetch() {($HOME/.config/tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
 add-zsh-hook chpwd tmux-git-autofetch
-    
+
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Haskell
-export PATH=~/haskell-course/.ghcup/bin:$PATH
+export PATH="$HOME/.ghcup/bin:$PATH"
 
 # Expo
 export EXPO_PACKAGE_MANAGER=pnpm
 
-# Android studio 
+# Android studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -50,3 +52,7 @@ function view-image() {
 
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

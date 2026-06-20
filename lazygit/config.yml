@@ -1,7 +1,11 @@
+customCommands:
+  - key: "<c-a>" # Triggers with Ctrl + A
+    description: "Generate AI commit message"
+    command: "aicommit2"
+    context: "files"
+    output: terminal
 gui:
-  authorColors: {
-    "*": "#7aa2f7",
-    }
+  authorColors: {"*": "#7aa2f7"}
   theme:
     activeBorderColor:
       - "#bb9af7" # Light purple - for active panel borders
