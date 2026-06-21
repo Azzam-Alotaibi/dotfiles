@@ -15,6 +15,8 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export COLORTERM=truecolor
+export EDITOR="zed --wait"
+export VISUAL="zed --wait"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
